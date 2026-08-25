@@ -1,15 +1,17 @@
 import { useState, type ReactNode } from "react";
-import { motion } from "motion";
+import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 
 
-interface SubmenuProps {
-    titulo: string;
-    children: ReactNode;
+interface SubMenuProps {
+    title: string;
+    to: string;
+    children?: ReactNode;
 }
 
 
-export const Submenu = ({ titulo, children }: SubmenuProps) => {
+export const SubMenu = ({ title, to, children }: SubMenuProps) => {
     
     const [isOpen, setIsOpen] = useState(false);
     
@@ -23,18 +25,19 @@ export const Submenu = ({ titulo, children }: SubmenuProps) => {
 
         <>
             <li
-                className=""
+                className="relative flex items-center justify-center"
                 onMouseEnter={handleActivated}
                 onMouseLeave={handleDeactivated}
             >
-                <button
-                    className=""
+                <Link
+                    className="bg-none px-3 py-1 text-inherit"
+                    to={to}
                     onClick={handleToggle}
                 >
-                    {titulo}
-                </button>
+                    {title}
+                </Link>
                 {isOpen && (
-                    <motion.ul
+                    <motion.ul className="w-fit absolute top-[110%] py-2 px-2 shadow-lg rounded-lg border-2 bg-gray-900"
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
