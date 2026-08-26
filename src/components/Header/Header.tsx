@@ -9,7 +9,7 @@ import PulpoTexto from '../../assets/images/LogoPulpoEncabezado.png'
 const liStyle = "list-none flex items-center justify-center";
 const linkStyle = "text-left text-inherit w-full px-3 py-1 whitespace-nowrap";
 const ulStyle = "flex items-center ml-auto justify-around w-full";
-const headerStyle = "py-3 bg-black text-white grid grid-cols-3 items-center w-full";
+const headerStyle = "py-3 bg-black md:px-[5%] px-5 text-white grid grid-cols-3 items-center w-full";
 const menuStyle = "col-span-2 flex w-full";
 
 
@@ -29,8 +29,8 @@ const subServicios = [
 const menu = [
   { id: 1, to: "/", titulo: "INICIO" },
   { id: 2, to: "/nosotros", titulo: "NOSOTROS", children: subNosotros },
-  { id: 2, to: "/servicios", titulo: "SERVICIOS", children: subServicios },
-  { id: 3, to: "/contactanos", titulo: "CONTACTANOS" }
+  { id: 3, to: "/servicios", titulo: "SERVICIOS", children: subServicios },
+  { id: 4, to: "/contactanos", titulo: "CONTACTANOS" }
 ]
 
 
@@ -59,9 +59,10 @@ export default function Header() {
                     ))}
                   </SubMenu>
                 ) : (
-                  <Link className={linkStyle} to={item.to}>
-                    {item.titulo}
-                  </Link>
+                  <SubMenu title={item.titulo} to={item.to} />
+                  // <Link className={linkStyle} to={item.to}>
+                  //   {item.titulo}
+                  // </Link>
                 )}
               </ColorChangeHover>
             ))}

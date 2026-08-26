@@ -36,7 +36,7 @@ export const SubMenu = ({ title, to, children }: SubMenuProps) => {
                 >
                     {title}
                 </Link>
-                {isOpen && (
+                {(isOpen && children) && (
                     <motion.ul className="w-fit absolute top-[110%] py-2 px-2 shadow-lg rounded-lg border-2 bg-gray-900"
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}

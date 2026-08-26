@@ -11,7 +11,7 @@ export default function RootLayout() {
     <> 
         <Header/>
 
-        <main>
+        <main className="flex-1">
             <Outlet />
         </main>
 

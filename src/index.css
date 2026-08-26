@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
 
 
 @theme {
@@ -11,6 +11,9 @@
 
 
 body {
-    background-color: var(--color-fondo);
+    background-color: #f7f7f7;
     font-family: var(--font-monserrat);
+
+    display: flex;
+    flex-direction: column;
 }
