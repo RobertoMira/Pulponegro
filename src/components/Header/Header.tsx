@@ -40,7 +40,7 @@ export default function Header() {
     <>
       <header className={headerStyle}>
         <div className='col-span-1'>
-          <img src={PulpoTexto} alt="Icono" className='min-w-60 max-w-60 flex place-self-center' />
+          <img src={PulpoTexto} alt="Logo Pulpo Negro" className='min-w-60 max-w-60 flex place-self-center' />
         </div>
         <nav className={menuStyle}>
           <ul className={ulStyle}>

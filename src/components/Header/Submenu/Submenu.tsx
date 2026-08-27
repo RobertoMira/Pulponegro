@@ -30,7 +30,7 @@ export const SubMenu = ({ title, to, children }: SubMenuProps) => {
                 onMouseLeave={handleDeactivated}
             >
                 <Link
-                    className="bg-none px-3 py-1 text-inherit"
+                    className="bg-none px-3 py-1 font-bold text-fondo"
                     to={to}
                     onClick={handleToggle}
                 >
