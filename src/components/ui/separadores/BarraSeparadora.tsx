@@ -1,13 +1,14 @@
 
 
 interface BarraSeparadorProps {
-    colorBarra: string;
+    colorBarra?: string;
+    wAncho?: string;
 }
 
 
 
-export const BarraSeparadora = ({ colorBarra = 'bg-lila' }: BarraSeparadorProps) => {
+export const BarraSeparadora = ({ colorBarra = 'bg-lila', wAncho = 'w-2/3' }: BarraSeparadorProps) => {
   return (
-    <div className={`w-5/6 h-2 rounded-2xl ${colorBarra}`} />
+    <div className={`${wAncho} h-2 rounded-2xl ${colorBarra}`} />
   )
 }
