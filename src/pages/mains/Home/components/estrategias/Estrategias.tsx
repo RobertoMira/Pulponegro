@@ -19,7 +19,7 @@ export const Estrategias = () => {
         rounded-2xl
     ">
         <h2 className="font-extrabold text-white text-center text-3xl pt-10">ESTATEGIAS</h2>
-        <div className="flex flex-wrap items-center justify-around gap-5 md:gap-0 py-10">
+        <div className="flex flex-wrap items-center justify-around gap-5 md:gap-3 py-10">
             {estrategias.map((estrategia) => (
                 <CardEstrategias key={estrategia.id} titulo={estrategia.titulo}><img src={estrategia.children} alt={estrategia.titulo} /></CardEstrategias>
             ))}

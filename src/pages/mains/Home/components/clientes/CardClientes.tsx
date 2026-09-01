@@ -16,7 +16,7 @@ export const CardClientes = ({name, text, imgC}: CardClientesProps) => {
         justify-center text-center shadow-xl/90 shadow-lila 
         transition-all invert-0 hover:invert duration-200
     ">
-        <h2>{name}</h2>
+        <h2 className="font-extrabold">{name}</h2>
         <img className="hover:drop-shadow-md hover:drop-shadow-blue-600" src={imgC} alt={name} />
         <p>{text}</p>
     </div>
