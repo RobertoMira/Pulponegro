@@ -25,7 +25,7 @@ export const SubMenu = ({ title, to, children }: SubMenuProps) => {
 
         <>
             <li
-                className="relative flex items-center justify-center"
+                className="relative flex items-center justify-center z-10"
                 onMouseEnter={handleActivated}
                 onMouseLeave={handleDeactivated}
             >

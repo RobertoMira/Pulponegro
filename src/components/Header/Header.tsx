@@ -14,9 +14,9 @@ const menuStyle = "col-span-2 flex w-full";
 
 
 const subNosotros = [
-  { id: 1, to: "#nosotros", titulo: "HISTORIA" },
-  { id: 2, to: "#mision", titulo: "MISIÓN" },
-  { id: 3, to: "#vision", titulo: "VISIÓN" }
+  { id: 1, to: "/nosotros#historia", titulo: "HISTORIA" },
+  { id: 2, to: "/nosotros#mision", titulo: "MISIÓN" },
+  { id: 3, to: "/nosotros#vision", titulo: "VISIÓN" }
 ]
 
 

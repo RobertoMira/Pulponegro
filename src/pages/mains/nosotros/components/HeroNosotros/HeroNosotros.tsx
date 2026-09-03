@@ -18,21 +18,21 @@ const info = [
 export default function HeroNosotros() {
   return (
     <>
-      <div className="relative w-full flex flex-col md:grid md:grid-cols-12 md:gap-10 md:py-20 md:px-[5%] mx-auto
+      <div className="relative w-full flex flex-col md:grid md:grid-cols-12 md:gap-20 md:py-10 md:px-[5%] mx-auto
         items-center justify-center md:justify-start
       ">
         <div className="md:col-span-5 flex flex-col gap-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold">HISTORIAS QUE <span className="text-lila">CONECTAN</span> IDEAS QUE <span className="text-lila">TRANSFORMAN</span></h2>
           <img className="absolute -z-10 md:w-100 lg:w-125 xl:w-150 top-0 right-2/6" src={PulpoHero} alt="Pulpo Negro Logo" />
-          <BarraSeparadora />
-          <p>
-            Como un grupo creativo apasionados por contar historias poderosas. Durante un tiempo, nos Hacemos
+          <BarraSeparadora wAncho="w-25" rBordes="rounded-r-2xl" />
+          <p className="font-medium">
+            Como un grupo creativo apasionados por contar historias poderosas. Durante un tiempo, nos hemos
             enfocado en generar estrategias y experiencias, que ayuden a nuestros clientes a alcanzar los
             objetivos de su marca.
           </p>
-          <p>
-            Porque creemos que cada proyecto es unico y entendemos el poder de la comunicación , en Pulpo Negro
-            construimos historias de éxito.
+          <p className="font-medium">
+            Porque creemos que cada proyecto es unico y entendemos el poder de la comunicación ,
+            en <span className="font-extrabold">Pulpo Negro</span> construimos historias de éxito.
           </p>
           <div className="flex gap-5">
             {info.map((info) => (
@@ -40,8 +40,8 @@ export default function HeroNosotros() {
             ))}
           </div>
         </div>
-        <div className="md:col-span-7 w-full h-full flex items-start justify-center">
-            <img className="w-full rounded-2xl md:min-w-125 bg-white mix-blend-multiply " src={BanerHero} alt="Baner Estrategias" />
+        <div className="md:col-span-7 md:w-[55vw] md:relative h-full flex items-start justify-center">
+            <img className="w-9/10 md:absolute right-0 md:min-w-125 bg-white mix-blend-multiply" src={BanerHero} alt="Baner Estrategias" />
         </div>
       </div>
     </>
