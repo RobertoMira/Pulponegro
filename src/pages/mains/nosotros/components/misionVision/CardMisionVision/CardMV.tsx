@@ -14,7 +14,7 @@ export const CardMV = ({ idMV, gIcon, titulo, texto }: CardMVProps) => {
     <div className='grid grid-rows-2 w-140 md:h-180 md:gap-10 items-center justify-center bg-white rounded-2xl border-lila border-x-10 border-2 shadow-2xl px-10 py-4'>
         <div id={idMV} className='relative row-span-1 flex items-center justify-center w-full h-full'>      
             <img className='absolute opacity-40 w-full' src={PulpoFondo} alt="Pulpo De Fondo" />
-            <span className="absolute material-symbols-outlined text-[150px]! md:text-[340px]!"
+            <span className="absolute material-symbols-outlined text-[150px]! md:text-[280px]!"
                 style={{ color: '#99adda' }}
             >
             {gIcon}
