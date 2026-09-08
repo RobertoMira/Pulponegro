@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 @import url('https://fonts.google.com/icons?icon.style=Outlined');
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Artelinks';
+  src: url('./assets/images/fonts/ArtelyInks.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @theme {
     --color-fondo: #f7f7f7;
     --color-lila: #99adda;
 
     --font-monserrat: "Monserrat", sans-serif;
+    --font-artelinks: "Artelinks", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
 }
 
 

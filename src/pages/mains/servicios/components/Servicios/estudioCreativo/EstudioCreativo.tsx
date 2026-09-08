@@ -1,3 +1,4 @@
+import { SeparadorParrafo } from "../../../../../../components/ui/separadores/SeparadorParrafo";
 
 
 
@@ -5,6 +6,6 @@
 
 export default function EstudioCreativo() {
   return (
-    <div>EstudioCreativo</div>
+    <SeparadorParrafo encabezado="ESTUDIO CREATIVO" parrafo="DISEÑADORES A TU DISPOSICIÓN" />
   )
 }

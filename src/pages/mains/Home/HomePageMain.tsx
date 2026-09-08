@@ -12,7 +12,9 @@ import { Marcas } from "./components/marcas/Marcas";
 export default function HomePageMain() {
   return (
     <>
-      <section id="inicio" className="w-full flex flex-col items-center overflow-hidden px-5 md:px-[5%] py-8 mx-auto gap-5 md:gap-12">
+      <section id="inicio" className="w-full flex flex-col items-center overflow-hidden px-5 md:px-[5%] py-8 mx-auto gap-5 md:gap-12
+        bg-black  
+      ">
         <Hero/>
         <BarraSeparadora wAncho="w-1/3" />
         <Estrategias />
