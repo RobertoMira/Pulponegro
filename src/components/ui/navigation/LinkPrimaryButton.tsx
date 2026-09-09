@@ -9,7 +9,7 @@ interface LinkPrimaryButtonProps {
     className?: string;
 }
 
-
+    
 export const LinkPrimaryButton = ({
     to,
     variant = 'primary',

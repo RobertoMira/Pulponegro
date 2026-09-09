@@ -15,10 +15,10 @@ const estrategias = [
 
 export const Estrategias = () => {
   return (
-    <section className="flex flex-col w-full bg-black
-        rounded-2xl
+    <section className=" flex flex-col w-full gap-10
+        rounded-2xl z-10
     ">
-        <h2 className="font-extrabold text-white text-center text-3xl pt-10">ESTATEGIAS</h2>
+        <h2 className="font-extrabold text-white z-10 text-center text-3xl pt-10">ESTATEGIAS</h2>
         <div className="flex flex-wrap items-center justify-around gap-5 md:gap-3 py-10">
             {estrategias.map((estrategia) => (
                 <CardEstrategias key={estrategia.id} titulo={estrategia.titulo}><img src={estrategia.children} alt={estrategia.titulo} /></CardEstrategias>

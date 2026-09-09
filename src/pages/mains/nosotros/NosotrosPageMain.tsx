@@ -12,7 +12,7 @@ export default function NosotrosPageMain() {
             <HeroNosotros />
             <BarraSeparadora />
             {/* <InfoNosotros /> */}
-            <MisionVision />
+          <MisionVision />
         </section>
     </>
   )

@@ -31,7 +31,7 @@ export const menu = [
   { id: 1, to: "/", titulo: "INICIO" },
   { id: 2, to: "/nosotros", titulo: "NOSOTROS", children: subNosotros },
   { id: 3, to: "/servicios", titulo: "SERVICIOS", children: subServicios },
-  { id: 4, to: "/contactanos", titulo: "CONTACTANOS" }
+  { id: 4, to: "/contacto", titulo: "CONTACTO" }
 ]
 
 
