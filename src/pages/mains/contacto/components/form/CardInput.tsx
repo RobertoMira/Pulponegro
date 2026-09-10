@@ -7,31 +7,49 @@ interface CardInputProps {
     fid?: string;
     fname: string;
     fplaceHolder: string;
-    frequired: boolean;
+    frequired?: boolean;
     className?: string;
     bgColor: string;
+    focusColor: string;
+    borderColor?: string;
 }
 
 
-export const CardInput = ({ fLabel, fType, variant, fid, fname, fplaceHolder, frequired, className = '', bgColor }: CardInputProps) => {
+export const CardInput = ({ fLabel, fType, variant, fid, fname, fplaceHolder, frequired, className = '', bgColor, focusColor, borderColor }: CardInputProps) => {
 
 
-    const baseStyles = `${bgColor}/50 w-full  rounded-2xl`;
+    const baseStyles = `w-full rounded-2xl px-3 py-2 border border-gray-200
+        transition-[background-color,border-color,outline,outline-offset] duration-80 ${bgColor} ${borderColor} ${focusColor}`;
 
     const variantStyles = {
-        predeterminados: 'h-30',
-        textarea: 'h-60'
+        predeterminados: 'h-15',
+        textarea: 'h-50 resize-none', 
     }
 
     const combinedStyles = `${baseStyles} ${variantStyles[variant]} ${className}`
 
   return (
 
-    <label htmlFor="">{fLabel}</label>
-    {(fType == (!'textarea')) ? (
-        <input type={fType} id={fid} name={fname} placeholder={fplaceHolder} {frequired ? {required} : {none}} className={combinedStyles} />
-    ) : (
-        <textarea name={fname} id={fid} placeholder={fplaceHolder} {frequired ? {required} : {none}} className={combinedStyles} ></textarea>
-    ))}
+    <div className="flex flex-col gap-2 w-full h-fit">
+        <label htmlFor="" className={`text-lila font-bold`}>{fLabel}</label>
+        {(fType === 'textarea' || variant === 'textarea') ? (
+            <textarea
+                name={fname}
+                id={fid}
+                placeholder={fplaceHolder}
+                required={frequired}
+                className={combinedStyles}
+            />
+        ) : (
+            <input
+                type={fType}
+                id={fid}
+                name={fname}
+                placeholder={fplaceHolder}
+                required={frequired}
+                className={combinedStyles}
+            />
+        )}
+    </div>
   )
 }
