@@ -23,7 +23,7 @@ export const CardInput = ({ fLabel, fType, variant, fid, fname, fplaceHolder, fr
 
     const variantStyles = {
         predeterminados: 'h-15',
-        textarea: 'h-50 resize-none', 
+        textarea: 'h-30 resize-none', 
     }
 
     const combinedStyles = `${baseStyles} ${variantStyles[variant]} ${className}`
