@@ -9,7 +9,7 @@ import { CardInput } from "./CardInput";
 export default function FormContacto() {
   return (
     <div 
-      className="w-full md:w-3/8 h-fit px-8 py-8 rounded-2xl bg-white border-2  border-lila shadow-2xl md:border-gray-200
+      className="w-full md:w-3/8 h-184 px-8 py-8 rounded-2xl bg-white border-2  border-lila shadow-2xl md:border-gray-200
       md:hover:border-lila md:hover:shadow-2xl">
       <form 
         action=""
