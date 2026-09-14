@@ -1,6 +1,7 @@
 
 
 import * as ClientesLogos from '../../../../../assets/images/clientes/BarrelFile'
+import { FadeIn } from '../../../../../components/ui/animations/FadeIn'
 import { CardClientes } from './CardClientes'
 
 
@@ -33,7 +34,9 @@ export const Clientes = () => {
   return (
     <div className='md:w-full flex flex-wrap gap-2.5 items-center justify-around'>
       {clientes.map((cliente) => (
-        <CardClientes key={cliente.id} name={cliente.name} imgC={cliente.imgC} />
+        <FadeIn key={cliente.id}>
+          <CardClientes name={cliente.name} imgC={cliente.imgC} />
+        </FadeIn>
       ))}
     </div>
   )

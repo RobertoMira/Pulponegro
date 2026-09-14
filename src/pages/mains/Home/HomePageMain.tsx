@@ -1,4 +1,5 @@
 import TintaFondo from '../../../assets/images/tinta.png'
+import { FadeIn } from '../../../components/ui/animations/FadeIn';
 
 
 import { BarraSeparadora } from "../../../components/ui/separadores/BarraSeparadora";
@@ -20,7 +21,9 @@ export default function HomePageMain() {
         ">
         <Hero/>
       </section> 
+      <FadeIn className='flex flex-col items-center justify-center w-full'>
         <BarraSeparadora wAncho="w-1/3" />
+      </FadeIn>
       <section className="relative w-full flex flex-col items-center justify-center overflow-hidden px-5 md:px-[5%] mx-auto gap-5 md:gap-12
         bg-white py-5"
       >
@@ -32,10 +35,14 @@ export default function HomePageMain() {
       <section className="relative w-full flex flex-col items-center justify-center overflow-hidden px-5 md:px-[5%] mx-auto gap-5 md:gap-12
         bg-white"
       >
-        <SeparadorParrafo encabezado="NUESTRAS MARCAS"  parrafo="INHOUSE"/>
+        <FadeIn>
+          <SeparadorParrafo encabezado="NUESTRAS MARCAS"  parrafo="INHOUSE"/>
+        </FadeIn>
         <Marcas />
         <BarraSeparadora wAncho="w-1/3" />
-        <SeparadorParrafo encabezado="VALIOSOS CLIENTES"  parrafo="ALGUNOS DE NUESTROS"/>
+        <FadeIn>
+          <SeparadorParrafo encabezado="VALIOSOS CLIENTES"  parrafo="ALGUNOS DE NUESTROS"/>
+        </FadeIn>
         <Clientes />
       </section>
     </section>
