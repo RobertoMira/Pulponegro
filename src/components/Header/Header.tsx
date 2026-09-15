@@ -21,16 +21,16 @@ export const subNosotros = [
 ]
 
 
-export const subServicios = [
-  { id: 1, to: "#marketing", titulo: "MARKETING" },
-  { id: 2, to: "#desarrollo-web", titulo: "DESARROLLO WEB" },
-]
+// export const subServicios = [
+//   { id: 1, to: "#marketing", titulo: "MARKETING" },
+//   { id: 2, to: "#desarrollo-web", titulo: "DESARROLLO WEB" },
+// ]
 
 
 export const menu = [
   { id: 1, to: "/", titulo: "INICIO" },
   { id: 2, to: "/nosotros", titulo: "NOSOTROS", children: subNosotros },
-  { id: 3, to: "/servicios", titulo: "SERVICIOS", children: subServicios },
+  { id: 3, to: "/servicios", titulo: "SERVICIOS",  },
   { id: 4, to: "/contacto", titulo: "CONTACTO" }
 ]
 

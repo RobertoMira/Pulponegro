@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom'
 import { CardServicios } from './CardServicios'
+import { FadeIn } from '../../../../../../../components/ui/animations/FadeIn'
 
 
 const servicios = [
@@ -14,12 +15,16 @@ const servicios = [
 
 export default function SeccionServicios() {
   return (
-    <>
+    <FadeIn
+        className="w-full h-full flex flex-wrap justify-center gap-5"
+        stagger={0.2}
+        duration={0.55}
+    >
         {servicios.map((servicio) => (
-            <Link to={servicio.path}>
-                <CardServicios key={servicio.id} label={servicio.label} iconS={servicio.iconS} description={servicio.description} />
+            <Link key={servicio.id} to={servicio.path}>
+                <CardServicios label={servicio.label} iconS={servicio.iconS} description={servicio.description} />
             </Link>
         ))}
-    </>
+    </FadeIn>
   )
 }

@@ -7,10 +7,11 @@ interface CardContactoProps {
     description: string;
     cType: 'link' | 'text';
     cTo: string;
+    cTarget?: boolean;
 }
 
 
-export const CardContacto = ({ label, iconC, description, cType, cTo }: CardContactoProps) => {
+export const CardContacto = ({ label, iconC, description, cType, cTo, cTarget }: CardContactoProps) => {
   return (
     <div className="w-full h-fit flex  items-center gap-5">
         <div className="w-12 h-12 flex items-center justify-center bg-lila/20 rounded-2xl border border-gray-300">
@@ -25,7 +26,13 @@ export const CardContacto = ({ label, iconC, description, cType, cTo }: CardCont
             {cType === 'text' ? (
                 <p className="text-lila">{description}</p>
             ) : (
-                <Link className="text-lila font-bold text-shadow-2xs" to={cTo} >{description}</Link>
+                <Link
+                    className="text-lila font-bold text-shadow-2xs"
+                    to={cTo}
+                    target={cTarget ? "_blank" : undefined}
+                >
+                    {description}
+                </Link>
             )}
         </div>
     </div>

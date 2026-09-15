@@ -10,9 +10,6 @@ import Hero from "./components/Hero";
 import { Marcas } from "./components/marcas/Marcas";
 
 
-
-
-
 export default function HomePageMain() {
   return (
     <section className="flex flex-col items-center justify-center bg-black">

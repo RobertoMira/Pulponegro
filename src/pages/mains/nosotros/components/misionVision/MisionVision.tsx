@@ -1,3 +1,4 @@
+import { FadeIn } from "../../../../../components/ui/animations/FadeIn"
 import { CardMV } from "./CardMisionVision/CardMV"
 
 
@@ -11,7 +12,9 @@ export default function MisionVision() {
   return (
     <div className="flex flex-wrap items-center md:justify-around gap-4 md:gap-0 w-full md:px-[5%]">
         {contenido.map((carta) => (
-            <CardMV key={carta.id} idMV={carta.idMV} gIcon={carta.gIcon} titulo={carta.titulo} texto={carta.texto} />
+          <FadeIn key={carta.id}>
+            <CardMV idMV={carta.idMV} gIcon={carta.gIcon} titulo={carta.titulo} texto={carta.texto} />
+          </FadeIn>
         ))}
     </div>
   )

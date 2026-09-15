@@ -2,8 +2,8 @@ import HeroServicios from "./components/hero/HeroServicios";
 
 import { useState, useEffect } from "react";
 import { ArribaBtn } from "./components/ArribaBtn";
-import { BarraSeparadora } from "../../../components/ui/separadores/BarraSeparadora";
-import EstudioCreativo from "./components/Servicios/estudioCreativo/EstudioCreativo";
+// import { BarraSeparadora } from "../../../components/ui/separadores/BarraSeparadora";
+// import EstudioCreativo from "./components/Servicios/estudioCreativo/EstudioCreativo";
 
 
 export default function ServiciosPage() {
@@ -29,8 +29,8 @@ export default function ServiciosPage() {
           px-5 md:px-[5%] py-8 mx-auto gap-5 md:gap-12 bg-fondo"
         >
             <HeroServicios />
-            <BarraSeparadora />
-            <EstudioCreativo />
+            {/* <BarraSeparadora /> */}
+            {/* <EstudioCreativo /> */}
             <ArribaBtn show={showButton} />
         </section>
     </>

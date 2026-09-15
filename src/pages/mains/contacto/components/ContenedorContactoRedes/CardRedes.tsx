@@ -6,10 +6,11 @@ import { motion } from "motion/react";
 interface CardRedesProps {
     pathR: string;
     children: ReactNode;
+    rTarget?: boolean;
 }
 
 
-export const CardRedes = ({ pathR, children }: CardRedesProps) => {
+export const CardRedes = ({ pathR, children, rTarget }: CardRedesProps) => {
   return (
     <motion.div 
         className="group flex w-12 h-12 items-center justify-center rounded-2xl border border-lila"
@@ -30,7 +31,11 @@ export const CardRedes = ({ pathR, children }: CardRedesProps) => {
         }}
     >
 
-        <Link target="_blank" className=" flex items-center justify-center rounded-2xl w-full h-full" to={pathR}>
+        <Link 
+            className=" flex items-center justify-center rounded-2xl w-full h-full" 
+            to={pathR}
+            target={rTarget ? "_blank" : undefined }
+        >
             {children}
         </Link>
     </motion.div>

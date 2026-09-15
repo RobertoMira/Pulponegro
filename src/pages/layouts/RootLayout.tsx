@@ -9,7 +9,7 @@ import ScrollToAnchor from "../../components/ui/utiles/ScrollToAnchor";
 
 export default function RootLayout() {
   return (
-    <> 
+    <div className="flex min-h-screen flex-col"> 
         <ScrollToAnchor />
         <Header/>
 
@@ -19,6 +19,6 @@ export default function RootLayout() {
 
         <Footer/>
 
-    </>
+    </div>
   )
 }

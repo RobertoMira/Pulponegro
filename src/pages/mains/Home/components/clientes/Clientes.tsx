@@ -32,12 +32,13 @@ const clientes = [
 
 export const Clientes = () => {
   return (
-    <div className='md:w-full flex flex-wrap gap-2.5 items-center justify-around'>
+    <FadeIn 
+      className='md:w-full flex flex-wrap gap-5.5 items-center justify-around mb-10'
+      stagger={0.2}
+      >
       {clientes.map((cliente) => (
-        <FadeIn key={cliente.id}>
-          <CardClientes name={cliente.name} imgC={cliente.imgC} />
-        </FadeIn>
+          <CardClientes key={cliente.id} name={cliente.name} imgC={cliente.imgC} />
       ))}
-    </div>
+    </FadeIn>
   )
 }

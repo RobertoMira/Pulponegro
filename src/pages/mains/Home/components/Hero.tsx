@@ -22,7 +22,7 @@ export default function Hero() {
                           <span className="font-poppins translate-y-10 -translate-x-20">NEGRO</span>
                         </h1>
                         <p className="text-3xl md:text-7xl text-shadow-lg font-poppins font-extrabold text-lila">TODO COMUNICA</p>
-                        <p className="text-base md:text-2xl text-shadow-2xs font-poppins font-normal text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, harum animi. Sequi suscipit nisi incidunt nihil maxime quibusdam </p>
+                        <p className="text-base md:text-2xl text-shadow-2xs font-poppins font-normal text-white">En Pulpo Negro convertimos ideas en marcas que conectan, inspiran y dejan huella a través de la estrategia, el diseño y la comunicación.</p>
                     </div>
                     <BarraSeparadora colorBarra="bg-lila" direccion="izquierda" />
                     <div className="flex gap-6 w-full z-10">
@@ -32,7 +32,6 @@ export default function Hero() {
                 </div>
             </FadeIn>
             
-            {/* CORRECCIÓN: Pasamos las clases de posicionamiento absoluto al FadeIn */}
             <FadeIn 
               direction="izquierda" 
               className="absolute md:right-[7.5%] z-4 md:z-5 md:w-1/2"
@@ -40,7 +39,7 @@ export default function Hero() {
                 <img 
                   src={PulpoHero} 
                   alt="Pulpo Hero" 
-                  className="w-full h-auto" // La imagen ahora solo llena el contenedor animado
+                  className="w-full h-auto"
                 />
             </FadeIn>
 
