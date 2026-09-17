@@ -21,7 +21,7 @@ export const Marcas = () => {
         <div className="flex flex-wrap items-center justify-around gap-5 md:gap-0 py-10">
             {marcas.map((marca) => (
                 <FadeIn key={marca.id} direction={marca.fade} >
-                    <CardMarcas titulo={marca.titulo}><img className='md:w-70' src={marca.children} alt={marca.titulo} /></CardMarcas>
+                    <CardMarcas titulo={marca.titulo}><img className='md:w-70' src={marca.children} alt={marca.titulo} loading='lazy' /></CardMarcas>
                 </FadeIn>
             ))}
         </div>
