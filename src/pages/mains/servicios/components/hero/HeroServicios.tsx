@@ -1,6 +1,6 @@
 
 import { motion } from "motion/react"
-import Pulpo from "../../../../../assets/images/pulpoRecortado.png"
+import Pulpo from "../../../../../assets/images/pulpoRecortado.webp"
 import { LinkPrimaryButton } from "../../../../../components/ui/navigation/LinkPrimaryButton"
 import SeccionServicios from "./Herocomps/cardServicios/SeccionServicios"
 import { FadeIn } from "../../../../../components/ui/animations/FadeIn"

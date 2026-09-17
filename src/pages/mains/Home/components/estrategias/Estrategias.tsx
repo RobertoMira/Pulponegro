@@ -1,6 +1,6 @@
 import { CardEstrategias } from "./CardEstrategias"
 
-import EjemploPulpo from '../../../../../assets/images//pulpoGrande.png';
+import EjemploPulpo from '../../../../../assets/images//pulpoGrande.webp';
 import { FadeIn } from "../../../../../components/ui/animations/FadeIn";
 
 

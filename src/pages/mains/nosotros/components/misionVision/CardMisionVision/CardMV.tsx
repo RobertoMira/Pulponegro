@@ -1,4 +1,4 @@
-import PulpoFondo from '../../../../../../assets/images/pulpoRecortado.png'
+import PulpoFondo from '../../../../../../assets/images/pulpoRecortado.webp'
 
 
 interface CardMVProps {

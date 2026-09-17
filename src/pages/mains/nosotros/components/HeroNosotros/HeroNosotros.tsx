@@ -1,7 +1,7 @@
 import { BarraSeparadora } from "../../../../../components/ui/separadores/BarraSeparadora";
 
-import PulpoHero from "../../../../../assets/images/pulpoGrande.png";
-import BanerHero from "../../../../../assets/images/nosotrosImagenes/queHacemos.png"
+import PulpoHero from "../../../../../assets/images/pulpoGrande.webp";
+import BanerHero from "../../../../../assets/images/nosotrosImagenes/queHacemos.webp"
 import ProyectosRealizados from '../../../../../assets/images/nosotrosImagenes/50Proyectos.png'
 import MarcasImpulsadas from '../../../../../assets/images/nosotrosImagenes/marcasImpulsadas.png'
 import PacionHacemos from '../../../../../assets/images/nosotrosImagenes/pasionHacemos.png'

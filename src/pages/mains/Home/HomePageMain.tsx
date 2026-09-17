@@ -1,4 +1,4 @@
-import TintaFondo from '../../../assets/images/tinta.png'
+import TintaFondo from '../../../assets/images/tinta.webp'
 import { FadeIn } from '../../../components/ui/animations/FadeIn';
 
 
