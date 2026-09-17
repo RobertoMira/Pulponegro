@@ -9,7 +9,7 @@ interface CardMarcasProps {
 
 export const CardMarcas = ({ titulo, children }: CardMarcasProps) => {
   return (
-    <div className="grid grid-rows-6 justify-center items-center bg-inherit rounded-2xl w-100 h-100
+    <div className="grid grid-rows-6 justify-center items-center bg-inherit rounded-2xl md:w-100 md:h-100
         py-4 px-2
     ">
         <div className="row-span-5">

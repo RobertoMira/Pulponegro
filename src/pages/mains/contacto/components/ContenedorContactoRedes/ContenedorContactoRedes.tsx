@@ -13,7 +13,7 @@ export const ContenedorContactoRedes = () => {
   return (
     <FadeIn 
       direction="izquierda"
-      className="w-full md:w-3/8 h-184 px-8 py-8 rounded-2xl bg-white border-2  border-lila shadow-2xl md:border-gray-200
+      className="w-full md:w-3/8 h-fit md:h-184 px-8 py-8 rounded-2xl bg-white border-2  border-lila shadow-2xl md:border-gray-200
       md:hover:border-lila md:hover:shadow-2xl flex flex-col gap-12">
         <div className="flex flex-col gap-6">
           <h2 className="text-2xl font-bold text-lila text-shadow-2xs">Contactanos!</h2>
@@ -30,7 +30,7 @@ export const ContenedorContactoRedes = () => {
 
         <div className="flex flex-col gap-3">
           <h2 className="text-xl font-bold text-lila text-shadow-2xs">Redes Sociales</h2>
-          <div className="flex gap-7 ">
+          <div className="flex flex-wrap gap-7 ">
             <CardRedes pathR="https://wa.me/+523325974209" rTarget ><FontAwesomeIcon icon={faWhatsapp} size="xl" className="text-lila group-hover:text-white" /></CardRedes>
             <CardRedes pathR="https://www.facebook.com/profile.php?id=61577207035070" rTarget><FontAwesomeIcon icon={faFacebookF} size="lg" className="text-lila group-hover:text-white" /></CardRedes>
             <CardRedes pathR="#"><FontAwesomeIcon icon={faInstagram} size="xl" className="text-lila group-hover:text-white" /></CardRedes>

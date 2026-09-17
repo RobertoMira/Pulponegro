@@ -15,7 +15,7 @@ export default function HeroServicios() {
             <h2 className="text-2xl md:text-3xl lg:text-4xl text-center md:text-left font-extrabold">NUESTROS <span className="text-lila">SERVICIOS</span></h2>
             <img className="w-100" src={Pulpo} alt="Imagen Pulpo" />
             <p className="text-xl text-center md:text-left font-semibold">OFRECEMOS DIVERSAS MANERAS DE IMPULSAR TU MARCA</p>
-            <LinkPrimaryButton to="contacto" variant="primary" className="w-40 md:w-50">CONTACTANOS</LinkPrimaryButton>
+            <LinkPrimaryButton to="/contacto" variant="primary" className="w-40 md:w-50">CONTACTANOS</LinkPrimaryButton>
           </FadeIn>
           <motion.div className="md:col-span-1 md:w-2 md:h-5/6 w-5/6 h-2 rounded-2xl bg-lila justify-self-center"  
             initial={{ scaleY: 0 }}

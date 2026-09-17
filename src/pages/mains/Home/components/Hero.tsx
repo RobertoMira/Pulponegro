@@ -13,13 +13,13 @@ export default function Hero() {
             md:h-[calc(100vh-160px)] items-center justify-center md:justify-start bg-black
         ">
             {/* Animación del texto */}
-            <FadeIn>
+            <FadeIn className="w-full">
                 <div className="flex flex-col gap-8 text-center md:text-left items-start md:w-7/10">
-                    <div className="flex flex-col gap-4">
-                        <h1 className="text-3xl md:text-7xl text-shadow-lg text-white font-extrabold flex gap-4 items-center">
+                    <div className="flex flex-col gap-4 w-full scale-z-100 z-10">
+                        <h1 className="text-3xl md:text-left md:text-7xl text-shadow-lg text-white font-extrabold flex gap-4 items-center">
                           <span className="font-poppins font-light -translate-y-10">En</span> 
-                          <span className="font-artelinks text-[170px] -translate-y-10 font-normal">Pulpo</span> 
-                          <span className="font-poppins translate-y-10 -translate-x-20">NEGRO</span>
+                          <span className="font-artelinks text-[100px] md:text-[170px] -translate-y-10 font-normal">Pulpo</span> 
+                          <span className="font-poppins -translate-x-10 translate-y-2 md:translate-y-10 md:-translate-x-20">NEGRO</span>
                         </h1>
                         <p className="text-3xl md:text-7xl text-shadow-lg font-poppins font-extrabold text-lila">TODO COMUNICA</p>
                         <p className="text-base md:text-2xl text-shadow-2xs font-poppins font-normal text-white">En Pulpo Negro convertimos ideas en marcas que conectan, inspiran y dejan huella a través de la estrategia, el diseño y la comunicación.</p>

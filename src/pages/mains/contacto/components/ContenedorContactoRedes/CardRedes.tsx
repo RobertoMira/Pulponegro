@@ -13,7 +13,7 @@ interface CardRedesProps {
 export const CardRedes = ({ pathR, children, rTarget }: CardRedesProps) => {
   return (
     <motion.div 
-        className="group flex w-12 h-12 items-center justify-center rounded-2xl border border-lila"
+        className="group flex w-9 h-9 md:w-12 md:h-12 items-center justify-center rounded-2xl border border-lila"
         
         whileHover={{
             y: -3,
@@ -32,7 +32,7 @@ export const CardRedes = ({ pathR, children, rTarget }: CardRedesProps) => {
     >
 
         <Link 
-            className=" flex items-center justify-center rounded-2xl w-full h-full" 
+            className="flex items-center justify-center rounded-2xl w-full h-full" 
             to={pathR}
             target={rTarget ? "_blank" : undefined }
         >

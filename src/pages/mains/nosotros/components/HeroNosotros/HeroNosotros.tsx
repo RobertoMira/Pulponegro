@@ -22,9 +22,9 @@ export default function HeroNosotros() {
       <div className="relative w-full flex flex-col md:grid md:grid-cols-12 md:gap-20 md:py-10 md:px-[5%] mx-auto
         items-center justify-center md:justify-start
       ">
-        <div className="md:col-span-5 flex flex-col gap-8">
+        <div className="w-full md:col-span-5 flex flex-col gap-8">
           <FadeIn className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold"><h2>HISTORIAS QUE <span className="text-lila">CONECTAN</span> IDEAS QUE <span className="text-lila">TRANSFORMAN</span></h2></FadeIn>
-          <FadeIn className="absolute -z-10 md:w-100 lg:w-125 xl:w-150 top-0 right-2/6">
+          <FadeIn className="w-full absolute -z-10 md:w-100 lg:w-125 xl:w-150 top-0 right-2/6">
             <img  src={PulpoHero} alt="Pulpo Negro Logo" />
           </FadeIn>
           <BarraSeparadora wAncho="w-25" rBordes="rounded-r-2xl" direccion="izquierda" />

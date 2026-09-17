@@ -14,7 +14,7 @@ interface CardContactoProps {
 export const CardContacto = ({ label, iconC, description, cType, cTo, cTarget }: CardContactoProps) => {
   return (
     <div className="w-full h-fit flex  items-center gap-5">
-        <div className="w-12 h-12 flex items-center justify-center bg-lila/20 rounded-2xl border border-gray-300">
+        <div className="min-w-12 h-12  flex items-center justify-center bg-lila/20 rounded-2xl border border-gray-300">
             {typeof iconC === "string" ? (
                 <span className="material-symbols-outlined text-[30px]! md:text-[30px]!" style={{ color: '#99adda' }}>
                     {iconC}
