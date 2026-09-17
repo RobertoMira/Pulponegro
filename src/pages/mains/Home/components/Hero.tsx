@@ -1,4 +1,4 @@
-import PulpoHero from "../../../../assets/images/PulpoBlanco.png";
+import PulpoHero from "../../../../assets/images/PulpoBlanco.webp";
 import CirculoHero from '../../../../assets/images/Circulo.webp'
 
 import { FadeIn } from "../../../../components/ui/animations/FadeIn";
