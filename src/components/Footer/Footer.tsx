@@ -52,13 +52,13 @@ export default function Footer() {
         <div>
           <h2 className="mb-5 text-sm font-bold tracking-[0.2em] text-lila">CONTACTO</h2>
           <div className="flex flex-col gap-4 text-sm text-white/80">
-            <a className="flex items-center gap-3 transition-colors hover:text-lila" href="#">
+            <a className="flex items-center gap-3 transition-colors hover:text-lila" href="/contacto">
               <FontAwesomeIcon className="w-4 text-lila" icon={faPhone} />
-              <span>+52 33 3484 7616</span>
+              <span>+52 33 2597 4209</span>
             </a>
-            <a className="flex items-center gap-3 transition-colors hover:text-lila" href="#">
+            <a className="flex items-center gap-3 transition-colors hover:text-lila" href="/contacto">
               <FontAwesomeIcon className="w-4 text-lila" icon={faEnvelope} />
-              <span>comunicacion@pulponegro.com.mx</span>
+              <span>unpulponegro@gmail.com</span>
             </a>
           </div>
         </div>

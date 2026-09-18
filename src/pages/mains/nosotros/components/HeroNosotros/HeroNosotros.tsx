@@ -49,8 +49,8 @@ export default function HeroNosotros() {
             ))}
           </div>
         </div>
-        <FadeIn direction="derecha" className="md:col-span-7 md:w-[55vw] md:relative h-full flex items-start justify-center bg-none">
-            <img className="w-9/10 md:absolute right-0 md:min-w-125 bg-white mix-blend-multiply" src={BanerHero} alt="Baner Estrategias" />
+        <FadeIn direction="derecha" className="md:col-span-7 md:w-[55vw] md:relative h-full w-full flex bg-none">
+            <img className="w-9/10 md:absolute right-0 max-w-180 bg-white mix-blend-multiply" src={BanerHero} alt="Baner Estrategias" />
         </FadeIn>
       </div>
     </>

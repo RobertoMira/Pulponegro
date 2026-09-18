@@ -5,6 +5,7 @@ import { FadeIn } from "../../../../components/ui/animations/FadeIn";
 
 import { LinkPrimaryButton } from "../../../../components/ui/navigation/LinkPrimaryButton";
 import { BarraSeparadora } from "../../../../components/ui/separadores/BarraSeparadora";
+import { Floating } from "../../../../components/ui/animations/Floating";
 
 export default function Hero() {
   return (
@@ -33,14 +34,16 @@ export default function Hero() {
             </FadeIn>
             
             <FadeIn 
-              direction="izquierda" 
-              className="absolute md:right-[7.5%] z-4 md:z-5 md:w-1/2"
+            direction="izquierda" 
+            className="absolute md:right-[7.5%] z-4 md:z-5 md:w-1/2"
             >
-                <img 
-                  src={PulpoHero} 
-                  alt="Pulpo Hero" 
-                  className="w-full h-auto"
-                />
+                <Floating>
+                    <img 
+                    src={PulpoHero} 
+                    alt="Pulpo Hero" 
+                    className="w-full h-auto"
+                    />
+                </Floating>
             </FadeIn>
 
             <FadeIn direction="izquierda" className="w-40 md:w-1/4 h-auto absolute top-20 -right-20 md:right-15 md:top-0">

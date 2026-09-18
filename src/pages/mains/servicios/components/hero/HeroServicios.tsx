@@ -4,6 +4,7 @@ import Pulpo from "../../../../../assets/images/pulpoRecortado.webp"
 import { LinkPrimaryButton } from "../../../../../components/ui/navigation/LinkPrimaryButton"
 import SeccionServicios from "./Herocomps/cardServicios/SeccionServicios"
 import { FadeIn } from "../../../../../components/ui/animations/FadeIn"
+import { Floating } from "../../../../../components/ui/animations/Floating"
 
 
 export default function HeroServicios() {
@@ -13,7 +14,9 @@ export default function HeroServicios() {
         <div className="md:grid md:grid-cols-13 flex flex-col gap-6 md:gap-6 items-center justify-center">
           <FadeIn direction="izquierda" className="md:col-span-4 flex flex-col gap-6 items-center">
             <h2 className="text-2xl md:text-3xl lg:text-4xl text-center md:text-left font-extrabold">NUESTROS <span className="text-lila">SERVICIOS</span></h2>
-            <img className="w-100" src={Pulpo} alt="Imagen Pulpo" />
+            <Floating>
+              <img className="w-100" src={Pulpo} alt="Imagen Pulpo" />  
+            </Floating>
             <p className="text-xl text-center md:text-left font-semibold">OFRECEMOS DIVERSAS MANERAS DE IMPULSAR TU MARCA</p>
             <LinkPrimaryButton to="/contacto" variant="primary" className="w-40 md:w-50">CONTACTANOS</LinkPrimaryButton>
           </FadeIn>

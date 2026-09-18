@@ -42,7 +42,9 @@ export default function Header() {
       <header className={headerStyle}>
         <nav className={menuStyle}>
           <div className='shrink-0 md:w-auto'>
-            <img src={PulpoTexto} alt="Logo Pulpo Negro" className='flex min-w-60 max-w-60 place-self-center' />
+            <Link to="/">
+              <img src={PulpoTexto} alt="Logo Pulpo Negro" className='flex min-w-60 max-w-60 place-self-center' />
+            </Link>
           </div>
           <ul className={ulStyle}>
             {menu.map((item) => (
