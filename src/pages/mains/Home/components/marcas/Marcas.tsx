@@ -1,6 +1,6 @@
 
 import MascaraBendita from '../../../../../assets/images/home/MascaraBendita.webp'
-import LogoBlackCover from '../../../../../assets/images/home/LogoBlackCover.png'
+import LogoBlackCover from '../../../../../assets/images/home/BLACKCOVER-LOGO.png'
 import { CardMarcas } from './CardMarcas';
 import { FadeIn } from '../../../../../components/ui/animations/FadeIn';
 

@@ -22,7 +22,7 @@ export const ContenedorContactoRedes = () => {
 
         <div className="flex flex-col gap-7">
           <p className="text-xl font-bold text-lila text-shadow-2xs">Contacto Directos:</p>
-          <CardContacto label="Email" description="unpulponegro@gmail.com" iconC="mail" cType="link" cTo="https://mail.google.com/mail/?view=cm&fs=1&to=unpulponegro@gmail.com" cTarget={true} />
+          <CardContacto label="Email" description="direccion@pulponegro.com.mx" iconC="mail" cType="link" cTo="https://mail.google.com/mail/?view=cm&fs=1&to=unpulponegro@gmail.com" cTarget={true} />
           <CardContacto label="Ubicación" description="Guadalajara, Jal, México" iconC="location_on" cType="link" cTo="" />
           <CardContacto label="WhatsApp" description="Chat Directo" iconC={<FontAwesomeIcon icon={faWhatsapp} size="xl" className="text-lila" />} cType="link" cTo="https://wa.me/+523325974209" cTarget={true} />
           <CardContacto label="Celular" description="+52 33 2597 4209" iconC="call" cType="link" cTo="" />

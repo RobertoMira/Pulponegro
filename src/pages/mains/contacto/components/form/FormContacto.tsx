@@ -19,7 +19,7 @@ export default function FormContacto() {
       className="w-full md:w-3/8 h-184 px-8 py-8 rounded-2xl bg-white border-2  border-lila shadow-2xl md:border-gray-200
       md:hover:border-lila md:hover:shadow-2xl">
       <form 
-        action="https://formspree.io/f/xvkgpkjk"
+        action="https://formspree.io/f/xjykraqv"
         method="POST"
         target="_blank"
         onSubmit={handleSumbit}
