@@ -1,5 +1,6 @@
 import TintaFondo from '../../../assets/images/tinta.webp'
 import { FadeIn } from '../../../components/ui/animations/FadeIn';
+import { FadeOnScroll } from '../../../components/ui/animations/FadeOnScroll';
 
 
 import { BarraSeparadora } from "../../../components/ui/separadores/BarraSeparadora";
@@ -13,11 +14,11 @@ import { Marcas } from "./components/marcas/Marcas";
 export default function HomePageMain() {
   return (
     <section className="flex flex-col items-center justify-center bg-black">
-      <section id="inicio" className="w-full flex flex-col items-center overflow-hidden px-5 md:px-[5%] py-8 mx-auto gap-5 md:gap-12
+      <FadeOnScroll id="inicio" className="w-full flex flex-col items-center overflow-hidden px-5 md:px-[5%] py-8 mx-auto gap-5 md:gap-12
         bg-black
         ">
         <Hero/>
-      </section> 
+      </FadeOnScroll> 
       <FadeIn className='flex flex-col items-center justify-center w-full'>
         <BarraSeparadora wAncho="w-1/3" />
       </FadeIn>
