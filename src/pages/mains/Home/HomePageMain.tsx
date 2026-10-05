@@ -30,19 +30,29 @@ export default function HomePageMain() {
         />
         <Estrategias />
       </section>
-      <section className="relative w-full flex flex-col items-center justify-center overflow-hidden px-5 md:px-[5%] mx-auto gap-5 md:gap-12
-        bg-white"
-      >
-        <FadeIn>
-          <SeparadorParrafo encabezado="NUESTRAS MARCAS"  parrafo="INHOUSE"/>
-        </FadeIn>
-        <Marcas />
-        <BarraSeparadora wAncho="w-1/3" />
-        <FadeIn>
-          <SeparadorParrafo encabezado="VALIOSOS CLIENTES"  parrafo="ALGUNOS DE NUESTROS"/>
-        </FadeIn>
-        <Clientes />
-      </section>
+      <section
+    className="relative w-full flex flex-col items-center justify-center overflow-hidden
+      px-5 md:px-[5%] mx-auto gap-5 md:gap-12 bg-white pb-10 md:pb-16"
+  >
+    <FadeIn>
+      <SeparadorParrafo encabezado="NUESTRAS MARCAS" parrafo="INHOUSE" />
+    </FadeIn>
+    <Marcas />
+    <BarraSeparadora wAncho="w-1/3" />
+  </section>
+ 
+  {/* Clientes: fondo oscuro con dos manchas de luz detrás */}
+  <section className="relative w-full overflow-hidden bg-slate-950 px-5 py-16 md:px-[5%] md:py-24">
+    <div className="pointer-events-none absolute -left-32 top-1/4 h-96 w-96 rounded-full bg-lila/25 blur-3xl" />
+    <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-cyan-400/15 blur-3xl" />
+ 
+    <div className="relative z-10 flex flex-col items-center gap-5 md:gap-12 text-white">
+      <FadeIn>
+        <SeparadorParrafo encabezado="VALIOSOS CLIENTES" parrafo="ALGUNOS DE NUESTROS" />
+      </FadeIn>
+      <Clientes />
+    </div>
+  </section>
     </section>
   
   )

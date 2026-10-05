@@ -1,5 +1,3 @@
-
-
 interface CardClientesProps {
     name: string;
     text?: string;
@@ -9,13 +7,19 @@ interface CardClientesProps {
 
 export const CardClientes = ({name, text, imgC}: CardClientesProps) => {
   return (
-    <div className="bg-white w-45 md:w-50 h-70 rounded-md flex flex-col gap-1
-        justify-center text-center shadow-xl/90 shadow-lila 
-        transition-all invert-0 hover:invert duration-200
+    <div className="group bg-cyan-950 w-45 md:w-50 h-50 rounded-md flex flex-col gap-1
+        justify-center text-center shadow-xl/90 shadow-lila
+        transition-all duration-200 hover:-translate-y-1
     ">
-        <h2 className="font-extrabold">{name}</h2>
-        <img className="hover:drop-shadow-md hover:drop-shadow-blue-600" loading="lazy" src={imgC} alt={name} />
-        <p>{text}</p>
+        <img
+            className="h-35 w-full object-contain px-4 brightness-30 invert opacity-70
+                transition duration-200 group-hover:opacity-100 hover:brightness-70 group-hover:scale-105
+                group-hover:drop-shadow-[0_0_10px_var(--color-lila)]"
+            loading="lazy"
+            src={imgC}
+            alt={name}
+        />
+        {text && <p className="text-white/70 text-sm px-2">{text}</p>}
     </div>
   )
 }
